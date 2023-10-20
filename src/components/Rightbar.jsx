@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
 import React from "react";
 
 export const Rightbar = () => {
@@ -8,6 +8,44 @@ export const Rightbar = () => {
         <Typography variant="h6" fontWeight={100}>
           Online Friends
         </Typography>
+        <AvatarGroup max={7}>
+          <Avatar
+            alt="Remy Sharp"
+            src="https://cdn.pixabay.com/photo/2015/04/25/20/20/lady-739664_640.jpg"
+          />
+          <Avatar
+            alt="Remy Sharp"
+            src="https://cdn.pixabay.com/photo/2019/12/31/12/34/girl-4731823_640.jpg"
+          />
+          <Avatar
+            alt="Remy Sharp"
+            src="https://cdn.pixabay.com/photo/2015/08/14/19/53/vacation-888817_640.jpg"
+          />
+          <Avatar
+            alt="Remy Sharp"
+            src="https://cdn.pixabay.com/photo/2016/08/17/04/27/mother-1599653_640.jpg"
+          />
+          <Avatar
+            alt="Remy Sharp"
+            src="https://cdn.pixabay.com/photo/2018/05/23/16/06/woman-3424409_640.jpg"
+          />
+          <Avatar
+            alt="Travis Howard"
+            src="https://cdn.pixabay.com/photo/2017/08/07/16/29/red-2605450_640.jpg"
+          />
+          <Avatar
+            alt="Cindy Baker"
+            src="https://cdn.pixabay.com/photo/2020/03/27/19/56/girl-4974728_640.jpg"
+          />
+          <Avatar
+            alt="Agnes Walker"
+            src="https://cdn.pixabay.com/photo/2019/07/29/08/57/girl-4370196_640.jpg"
+          />
+          <Avatar
+            alt="Trevor Henderson"
+            src="https://cdn.pixabay.com/photo/2020/06/06/14/29/girl-5266760_640.jpg"
+          />
+        </AvatarGroup>
       </Box>
     </Box>
   );
