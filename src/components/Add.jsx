@@ -1,4 +1,12 @@
-import { Box, Fab, Modal, Tooltip, Typography, styled } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Fab,
+  Modal,
+  Tooltip,
+  Typography,
+  styled,
+} from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
 import React, { useState } from "react";
 
@@ -6,6 +14,12 @@ const StyledModal = styled(Modal)({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+});
+const UserBox = styled("Box")({
+  display: "flex",
+  gap: "10px",
+  alignItems: "center",
+  marginBottom: "20px",
 });
 
 export const Add = () => {
@@ -34,6 +48,16 @@ export const Add = () => {
         <Box width={400} height={280} p={3} bgcolor="white" borderRadius={5}>
           <Typography variant="h6" color={"grey"} textAlign={"center"}>
             Create New Post
+          </Typography>
+          <UserBox>
+            <Avatar
+              sx={{ width: 30, height: 30 }}
+              src="https://cdn.pixabay.com/photo/2023/10/15/05/03/sunflowers-8316194_1280.jpg"
+            />
+            <Typography variant="span">Issah</Typography>
+          </UserBox>
+          <Typography variant="span" textAlign={"center"} color={"grey"}>
+            What's in your mind?
           </Typography>
         </Box>
       </StyledModal>
