@@ -9,7 +9,13 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import { Add as AddIcon } from "@mui/icons-material";
+import {
+  Add as AddIcon,
+  CropOriginal,
+  EmojiEmotions,
+  PersonAddAlt,
+  VideoCameraBack,
+} from "@mui/icons-material";
 import React, { useState } from "react";
 
 const StyledModal = styled(Modal)({
@@ -66,7 +72,12 @@ export const Add = () => {
             placeholder="What's on your mind?"
             variant="standard"
           />
-          <Stack direction="row" gap={1}></Stack>
+          <Stack direction="row" gap={1} mt={2} mb={3}>
+            <EmojiEmotions color="secondary" />
+            <CropOriginal color="primary" />
+            <VideoCameraBack color="success" />
+            <PersonAddAlt color="error" />
+          </Stack>
         </Box>
       </StyledModal>
     </>
