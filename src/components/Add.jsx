@@ -1,6 +1,8 @@
 import {
   Avatar,
   Box,
+  Button,
+  ButtonGroup,
   Fab,
   Modal,
   Stack,
@@ -11,6 +13,7 @@ import {
 } from "@mui/material";
 import {
   Add as AddIcon,
+  CalendarMonth,
   CropOriginal,
   EmojiEmotions,
   PersonAddAlt,
@@ -78,6 +81,16 @@ export const Add = () => {
             <VideoCameraBack color="success" />
             <PersonAddAlt color="error" />
           </Stack>
+          <ButtonGroup
+            fullWidth
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button>Post</Button>
+            <Button sx={{ width: "100px" }}>
+              <CalendarMonth />
+            </Button>
+          </ButtonGroup>
         </Box>
       </StyledModal>
     </>
