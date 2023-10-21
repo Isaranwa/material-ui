@@ -3,6 +3,8 @@ import {
   Box,
   Fab,
   Modal,
+  Stack,
+  TextField,
   Tooltip,
   Typography,
   styled,
@@ -56,9 +58,15 @@ export const Add = () => {
             />
             <Typography variant="span">Issah</Typography>
           </UserBox>
-          <Typography variant="span" textAlign={"center"} color={"grey"}>
-            What's in your mind?
-          </Typography>
+          <TextField
+            sx={{ width: "100%" }}
+            id="standard-multiline-static"
+            multiline
+            rows={3}
+            placeholder="What's on your mind?"
+            variant="standard"
+          />
+          <Stack direction="row" gap={1}></Stack>
         </Box>
       </StyledModal>
     </>
