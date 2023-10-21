@@ -7,7 +7,7 @@ import { Add } from "./components/Add";
 import { useState } from "react";
 
 function App() {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
 
   const darkTheme = createTheme({
     palette: {
@@ -19,7 +19,7 @@ function App() {
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar />
         <Stack direction="row" spacing={2} justifyContent="space-between">
-          <Sidebar />
+          <Sidebar setMode={setMode} mode={mode} />
           <Feeds />
           <Rightbar />
         </Stack>
