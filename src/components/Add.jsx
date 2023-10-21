@@ -42,7 +42,7 @@ export const Add = () => {
         title="Add post"
         sx={{
           position: "fixed",
-          bottom: 20,
+          bottom: 5,
           left: { xs: "calc(50% - 25px)", md: 30 },
         }}
       >
@@ -52,7 +52,7 @@ export const Add = () => {
       </Tooltip>
       <StyledModal
         open={open}
-        onClose={(e) => setOpen(true)}
+        onClose={(e) => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
